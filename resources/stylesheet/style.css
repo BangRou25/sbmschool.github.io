@@ -8,6 +8,8 @@
     color: #151515;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    font-size: 16px;
+    border: 0;
 }
 
 header {
@@ -82,8 +84,10 @@ h3 {
 
 #keunggulan {
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5%;
 }
 
 #keunggulan-title {
@@ -93,4 +97,16 @@ h3 {
 #keunggulan-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+@media (max-width: 800px) {
+    #keunggulan-content {
+        flex-direction: column;
+    }
+}
+
+.keunggulan-column {
+    padding: 24px 5%;
 }
