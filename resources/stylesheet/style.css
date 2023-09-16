@@ -4,7 +4,9 @@
 
 * {font-family: 'Inter', sans-serif; box-sizing: border-box; margin: 0; padding: 0; border: 0; text-decoration: none;}
 
-h1 {font-weight: 700;}
+section {padding: 48px 10%;}
+
+h1 {font-weight: 700; letter-spacing: 1px; font-size: 48px;}
 
 h2 {font-weight: 600;}
 
@@ -12,21 +14,41 @@ h3 {font-weight: 500;}
 
 p {font-weight: 400;}
 
-a {font-weight: 400;}
+a {font-weight: 400; font-size: 14px;}
+
+/*PSEUDO-BUTTON A CONFIG */
+div.btn_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}a.btn {margin: 12px; border-radius: 24px; text-align: center;}
+
+a.btn_daftar { padding: 9px 18px; background-color: var(--color-3); color: var(--color-text-light); transition: all 0.2s ease;}
+a.btn_daftar:hover {background-color: var(--color-text-light); color: var(--color-3);}
+
+a.btn_link { padding: 7px 16px; border-width: 2px; border-style: solid; border-color: var(--color-1); color: var(--color-1); transition: all 0.2s ease;}
+a.btn_link:hover {background-color: var(--color-1); color: var(--color-text-light);}
+
+/* VAR() CONFIG */
+:root {
+    --color-1: #fff;
+    --color-2: #013399;
+    --color-3: #FFCB03;
+    --color-text-light: #222;
+    --color-text-dark: #fff;
+}
 
 /* NAV CONFIG */
 
 header {
-    position: sticky, -webkit-sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
-    background-color: #fff;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    background-color: var(--color-1);
     border-bottom-width: 1px;
     border-color: #ddd;
     border-bottom-style: solid;
@@ -40,8 +62,20 @@ header {
     display: flex;
 }
 
-.nav_menu a {
+.nav_item {
     padding: 20.5px 12px;
-    font-size: 14px;
-    color: #222;
-} .nav_menu a:hover {color: #013399; padding: 20.5px 12px 18.5px 12px; border-color: #013399; border-bottom-width: 2px; border-bottom-style: solid;}
+    color: var(--color-text-light);
+} .nav_item:hover {color: var(--color-2);}
+
+/* SECTION STYLING */
+.banner {
+    height: 100vh;
+    background-color: var(--color-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.banner h1 {color: var(--color-text-dark); text-align: center;}
+.banner h2 {color: var(--color-text-dark); text-align: center;}
+
+.banner div a {width: 144px;}
