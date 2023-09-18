@@ -92,8 +92,8 @@ div.content_padding {padding: 48px 0;}
     flex-direction: column;
 }
 
-.banner h1, h2 {color: var(--color-text-dark);}
-
+.banner h1, h2 {color: var(--color-text-dark); text-align: center;}
+.banner_btn a {width: 160px;}
 .landing_page {
     align-items: center;
     justify-content: end;
