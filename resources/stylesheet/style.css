@@ -4,7 +4,7 @@
 
 * {font-family: 'Inter', sans-serif; box-sizing: border-box; margin: 0; padding: 0; border: 0; text-decoration: none;}
 
-section {padding: 48px 10%;}
+section {padding: 0 10%;}
 
 h1 {font-weight: 700; letter-spacing: 1px; font-size: 48px;}
 
@@ -16,7 +16,9 @@ p {font-weight: 400;}
 
 a {font-weight: 400; font-size: 14px;}
 
-/*PSEUDO-BUTTON A CONFIG */
+div.max_width {max-width: 1080px; margin: 0 auto;}
+
+/*PSEUDO-BUTTON <A> CONFIG */
 div.btn_container {
     display: flex;
     align-items: center;
@@ -44,14 +46,17 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10%;
+    padding: 0 105px;
     background-color: var(--color-1);
     border-bottom-width: 1px;
     border-color: #ddd;
     border-bottom-style: solid;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav_logo img{
@@ -68,14 +73,28 @@ header {
 } .nav_item:hover {color: var(--color-2);}
 
 /* SECTION STYLING */
+
+.bg_color_1 {
+    background-color: var(--color-1);
+}
+
+.bg_color_2 {
+    background-color: var(--color-2);
+}
+
+div.content_padding {padding: 48px 0;}
+
+/* SECTION CLASS */
+
 .banner {
     height: 100vh;
-    background-color: var(--color-2);
     display: flex;
     flex-direction: column;
+}
+
+.banner h1, h2 {color: var(--color-text-dark);}
+
+.landing_page {
+    align-items: center;
     justify-content: end;
 }
-.banner h1 {color: var(--color-text-dark); text-align: center;}
-.banner h2 {color: var(--color-text-dark); text-align: center;}
-
-.banner div a {width: 144px;}

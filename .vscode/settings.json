@@ -1,3 +1,7 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "editor.fontFamily": "'SF Mono', monospace",
+    "editor.fontSize": 14,
+    "editor.renderWhitespace": "selection",
+    "editor.cursorStyle": "line"
 }
