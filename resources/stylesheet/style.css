@@ -87,7 +87,7 @@ div.content_padding {padding: 48px 0;}
 /* SECTION CLASS */
 
 .bg_banner_img {
-    background-image: url('sbmschool.github.io/resources/img/banner-hero.png');
+    background-image: url('/sbmschool.github.io/resources/img/banner-hero.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
