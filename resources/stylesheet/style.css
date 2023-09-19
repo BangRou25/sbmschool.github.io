@@ -107,3 +107,8 @@ div.content_padding {padding: 48px 0;}
     justify-content: end;
     min-height: 510px;
 }
+
+/* ------ */
+
+.text_color_1 {color: var(--color-1);}
+.text_color_2 {color: var(--color-2);}
