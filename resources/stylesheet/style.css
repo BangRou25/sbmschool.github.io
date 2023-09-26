@@ -35,6 +35,7 @@ a.btn_link:hover {background-color: var(--color-1); color: var(--color-text-ligh
     --color-1: #fff;
     --color-2: #013399;
     --color-3: #FFCB03;
+    --color-4: #F4F4F4;
     --color-text-light: #222;
     --color-text-dark: #fff;
 }
@@ -76,9 +77,11 @@ header {
 .bg_color_1 {
     background-color: var(--color-1);
 }
-
 .bg_color_2 {
     background-color: var(--color-2);
+}
+.bg_color_3 {
+    background-color: var(--color-4);
 }
 
 .content_padding {padding: 84px 0;}
