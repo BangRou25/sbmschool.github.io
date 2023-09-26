@@ -10,9 +10,9 @@ h1 {font-weight: 700; letter-spacing: 1px; font-size: 48px;}
 
 h2 {font-weight: 600;}
 
-h3 {font-weight: 600; margin-bottom: 12px; font-size: 36px;}
+h3 {font-weight: 600; margin-bottom: 36px; font-size: 36px;}
 
-p {font-weight: 400; font-size: 21px; line-height: 28px;}
+p {font-weight: 400; font-size: 18px; line-height: 28px;}
 a {font-weight: 400; font-size: 14px;}
 
 div.max_width {max-width: 1080px; margin: 0 auto;}
@@ -81,11 +81,12 @@ header {
     background-color: var(--color-2);
 }
 
-.content_padding {padding: 48px 0;}
+.content_padding {padding: 84px 0;}
 .content_display_row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
+    align-items: center;
 }
 .content_column {
     display: flex;
@@ -121,4 +122,6 @@ header {
 .text_color_1 {color: var(--color-1);}
 .text_color_2 {color: var(--color-2);}
 
-.content_title {text-align: center;}
+.content_title {text-align: left;}
+
+.restrict_width {max-width: 480px;}
