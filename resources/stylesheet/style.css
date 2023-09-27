@@ -10,7 +10,7 @@ h1 {color: var(--color-text-dark); font-weight: 700; letter-spacing: 1px; font-s
 
 h2 {color: var(--color-text-dark); font-weight: 600;}
 
-h3 {font-weight: 600; margin-bottom: 36px; font-size: 36px;}
+h3 {font-weight: 600; font-size: 36px;} h3.margin_bt {margin-bottom: 36px;}
 
 p {font-weight: 400; font-size: 18px; line-height: 28px;}
 a {font-weight: 400; font-size: 14px;}
@@ -88,8 +88,18 @@ header {
 .content_display_row {
     display: flex;
     flex-direction: row;
-    justify-content: left;
     align-items: center;
+}
+.content_display_row_l {
+    justify-content: left;
+}
+.content_display_row_c {
+    justify-content: center;
+}
+.content_display_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .content_column {
     display: flex;
@@ -130,7 +140,23 @@ header {
 
 .text_color_1 {color: var(--color-1);}
 .text_color_2 {color: var(--color-2);}
+.text_color_3 {color: var(--color-text-light);}
 
-.content_title {text-align: left;}
+.content_title_l {text-align: left;}
+.content_title_c {text-align: center;}
 
 .restrict_width {max-width: 480px;}
+
+.box_col_container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+}
+.box_content {
+    padding-left: 24px;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: var(--color-text-light);
+    transition: all 0.2s ease;
+}.box_content:hover {border-left-color: var(--color-3); border-left-width: 10px;} .box_content h3 {font-size: 24px;}
