@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* DEFAULT STYLING CONFIGURATION */
 
@@ -177,9 +177,20 @@ header {
     flex-direction: column;
 }
 .box_content {
-    padding-left: 24px;
+    padding: 0 8px 0 24px;
     border-left-width: 2px;
     border-left-style: solid;
     border-left-color: var(--color-text-light);
     transition: all 0.2s ease;
-}.box_content:hover {border-left-color: var(--color-3); border-left-width: 10px;} .box_content h3 {font-size: 24px;}
+}.box_content:hover {padding-right: 0px; border-left-color: var(--color-3); border-left-width: 10px;} .box_content h3 {font-size: 24px;}
+
+/* footer */
+
+.footer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.footer_item {
+    padding: 12px;
+}
