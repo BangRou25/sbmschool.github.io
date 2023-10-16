@@ -152,6 +152,7 @@ header {
     align-items: baseline;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .box_content {
@@ -161,3 +162,4 @@ header {
     border-left-color: var(--color-text-light);
     transition: all 0.2s ease;
 }.box_content:hover {border-left-color: var(--color-3); border-left-width: 10px;} .box_content h3 {font-size: 24px;}
+
