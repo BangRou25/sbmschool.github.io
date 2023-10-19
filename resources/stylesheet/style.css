@@ -169,3 +169,7 @@ header {
 .content_title_c {text-align: center;}
 
 .restrict_width {max-width: 480px;}
+
+div.padding_x {
+    padding: 0 200px;
+}
